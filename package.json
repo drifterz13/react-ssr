@@ -1,0 +1,24 @@
+{
+  "name": "react-ssr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build --public-url ./dist index.html",
+    "start": "yarn build && babel-node server.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.9.7"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "express": "^4.16.4",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
